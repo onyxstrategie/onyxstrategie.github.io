@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Onyx Stratégie</title>
+    <meta
+      name="description"
+      content="Onyx Stratégie builds mobile apps. Building apps the other way."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Nunito:wght@400;500;600&display=swap"
+    />
+    <style>
+      :root {
+        --accent: #6ac8c4;
+        --bg: #090604;
+        --card: #130e0d;
+        --line: #24211a;
+        --text: #f1edd1;
+        --muted: #a1a1a8;
+        --bronze: #cd7f32;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Nunito", system-ui, sans-serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent);
+      }
+      .wrap {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+      .serif {
+        font-family: "Instrument Serif", Georgia, serif;
+        font-weight: 400;
+      }
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 48px;
+        padding-top: 88px;
+        padding-bottom: 96px;
+      }
+      .hero h1 {
+        margin: 0;
+        flex: 1 1 360px;
+        /*font-size: clamp(48px, 8vw, 96px);*/
+        line-height: 1.02;
+      }
+      .hero .tag {
+        flex: 1 1 320px;
+        border-left: 2px solid var(--accent);
+        padding-left: 28px;
+      }
+
+      .hero .tag p {
+        margin: 0;
+        font-size: clamp(28px, 3.4vw, 40px);
+        line-height: 1.15;
+      }
+      section.block {
+        padding-bottom: 96px;
+      }
+      .hero + .block::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background: var(--line);
+        margin-bottom: 64px;
+      }
+      h2 {
+        margin: 0 0 24px;
+        font-size: 36px;
+      }
+      .titleHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .titleHolder h1 {
+        flex: none;
+      }
+      .title1 {
+        font-size: 80px;
+        letter-spacing: 6px;
+      }
+      .title2 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 8px;
+      }
+      .spacerTitles {
+        height: 10px;
+      }
+      .app {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 28px;
+        padding: 32px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--card);
+      }
+      .icon {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+        background: #050505;
+        border: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+      .icon i {
+        display: block;
+        width: 44px;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--bronze);
+      }
+      .app .info {
+        flex: 1 1 280px;
+        min-width: 0;
+      }
+      .app .name {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .app p {
+        margin: 8px 0 0;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+      .app .soon {
+        margin-top: 14px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+      .contact p {
+        margin: 0 0 20px;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--muted);
+        max-width: 34em;
+      }
+      .contact p.mail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--accent);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+      }
+      .contact p.mail svg {
+        flex-shrink: 0;
+        opacity: 0.85;
+      }
+      .pill {
+        display: inline-block;
+        padding: 14px 22px;
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+      }
+      footer .wrap {
+        padding-top: 28px;
+        padding-bottom: 28px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 0 24px;
+        }
+        .hero {
+          padding-top: 56px;
+          padding-bottom: 64px;
+          gap: 32px;
+        }
+        .app {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="wrap hero">
+        <div class="titleHolder">
+          <h1 class="serif title1">Onyx</h1>
+          <div class="spacerTitles"></div>
+          <h1 class="serif title2">STRATEGIE</h1>
+        </div>
+        <div class="tag"><p class="serif">Building apps the other way</p></div>
+      </section>
+      <section class="wrap block">
+        <h2 class="serif">Our app</h2>
+        <div class="app">
+          <div class="icon" aria-hidden="true"><i></i><i></i></div>
+          <div class="info">
+            <div class="name">Crucible : Mental Math trainer</div>
+            <p>Advanced mental math calculation trainer</p>
+            <div class="soon">Coming soon on Google Play</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap block contact" id="contact">
+        <h2 class="serif">Contact</h2>
+        <p>For questions about our apps or for support, write to us.</p>
+        <p class="mail">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M2 7l10 7 10-7" />
+          </svg>
+          onyx.strategie@gmail.com
+        </p>
+      </section>
+    </main>
+    <footer><div class="wrap">© 2026 Onyx Stratégie</div></footer>
+  </body>
+</html>
